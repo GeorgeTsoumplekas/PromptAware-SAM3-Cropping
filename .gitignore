@@ -151,3 +151,9 @@ Thumbs.db
 # BPE vocabulary files
 *.bpe
 *.vocab
+
+# Local credentials and crop outputs
+token.txt
+hf_token.txt
+outputs/
+*_cropped/

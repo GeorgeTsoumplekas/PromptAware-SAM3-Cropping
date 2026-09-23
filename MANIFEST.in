@@ -1,6 +1,4 @@
 include LICENSE
 include README.md
-recursive-include examples *.py
-recursive-include examples *.ipynb
-recursive-include examples *.md
-recursive-include tests *.py
+include negative_foreground_prompts.txt
+include assets/bpe_simple_vocab_16e6.txt.gz
