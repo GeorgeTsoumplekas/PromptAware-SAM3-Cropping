@@ -1,6 +1,6 @@
 # SAM 3 concept cropping for multi-LoRA composition
 
-This repository crops generated images for [Training-Free Multi-Concept LoRA Composition with Prompt-Aware Weighting](https://arxiv.org/abs/2606.03792). Faces are cropped in [Prompt-Aware-Multi-LoRA-Composition](https://github.com/GeorgeTsoumplekas/PromptAware-Multi-LoRA-Composition) with a face detector. Every other concept, such as clothing, objects, backgrounds, and styles, is cropped here with [SAM 3](https://github.com/facebookresearch/sam3).
+This repository crops generated images for the [Training-Free Multi-Concept LoRA Composition with Prompt-Aware Weighting](https://arxiv.org/abs/2606.03792) paper. Faces are cropped in [Prompt-Aware-Multi-LoRA-Composition](https://github.com/GeorgeTsoumplekas/PromptAware-Multi-LoRA-Composition) with a face detector. Every other concept, such as clothing, objects, backgrounds, and styles, is cropped here with [SAM 3](https://github.com/facebookresearch/sam3).
 
 SAM 3 segments a text prompt, then this repo turns that mask into a crop:
 
@@ -17,7 +17,7 @@ The `sam3/` package is the SAM 3 image model used for these crops. It is covered
 
 ## Installation
 
-You need a CUDA GPU and CUDA 12.6 or newer. From this repository:
+From this repository:
 
 ```bash
 conda create -n sam3 python=3.12 -y
